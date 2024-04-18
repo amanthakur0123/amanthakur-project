@@ -111,7 +111,7 @@ class CartItems extends HTMLElement {
   updateQuantity(line,bundle, quantity, name, variantId) {
     this.enableLoading(line);
     let updates = {}
-    if(bundle.length){
+    if(bundle && bundle.length){
       updates[bundle] = quantity
     }
     updates[line] = quantity
