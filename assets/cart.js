@@ -3,6 +3,7 @@ class CartRemoveButton extends HTMLElement {
     super();
     this.bundleId = this.dataset.bundleId;
     this.itemId = this.dataset.itemId;
+    console.log(this.bundleId,this.itemId)
     this.addEventListener('click', (event) => {
       event.preventDefault();
       const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
